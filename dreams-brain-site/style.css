@@ -1,0 +1,89 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base typography & background */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  color: #f0f0f0;
+}
+
+/* Links */
+a {
+  color: #a8e6cf;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header, nav, footer */
+header, footer {
+  background: rgba(0,0,0,0.7);
+  padding: 1rem;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+nav li { font-weight: bold; }
+
+/* Main content container */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 8px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Keyframe animation */ 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+} /* :contentReference[oaicite:0]{index=0} */
+
+/* Tables styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  background: rgba(255,255,255,0.2);
+  text-align: left;
+}
+
+/* Quiz styling */
+.quiz-question { margin-bottom: 1rem; }
+button {
+  background: #a8e6cf;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+button:hover { background: #81c784; }
+
+/* Interactive diagram */
+.diagram {
+  margin: 2rem 0;
+  text-align: center;
+}
+.diagram img {
+  max-width: 100%;
+  cursor: pointer;
+  border: 4px solid #a8e6cf;
+  border-radius: 8px;
+}
